@@ -44,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Response arrived", Toast.LENGTH_SHORT).show();
 
                 for (UserModel userModel : users) {
-                    System.out.println(userModel.getNAME() + userModel.getAGE() + userModel.getURL());
                     TextView responseText = findViewById(R.id.response);
                     responseText.append(userModel.getNAME() + " " + userModel.getAGE() + " " + userModel.getURL());
+                    System.out.println(userModel.getNAME() + " " + userModel.getAGE() + " " + userModel.getURL());
                 }
             }
 
